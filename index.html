@@ -4,72 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alireza Rahmani Firouzja</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Courier New', monospace;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #333;
+      background: #1e1e1e;
+      color: #f4f4f4;
+      overflow-x: hidden;
     }
     header {
-      background: #333;
-      color: white;
-      padding: 1rem 0;
+      background: #282828;
+      color: #fff;
+      padding: 2rem 0;
       text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
     header img {
       width: 150px;
       height: 150px;
       border-radius: 50%;
       margin-bottom: 1rem;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: 1rem auto;
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border: 5px solid #fff;
     }
     h1, h2 {
-      color: #333;
+      color: #ffffff;
+      font-size: 2.5rem;
+      margin: 0;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    /* Section Styling */
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      background: #2c2c2c;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
     }
-    ul li {
-      margin: 0.5rem 0;
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
-    a {
-      color: #007BFF;
-      text-decoration: none;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
-    a:hover {
-      text-decoration: underline;
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
-    footer {
-      text-align: center;
-      padding: 1rem 0;
-      background: #333;
-      color: white;
-    }
+
+    /* Skills */
     .skills {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
+      justify-content: center;
+      margin-top: 1rem;
     }
+
     .skill {
-      background: #007BFF;
-      color: white;
+      background: #4a90e2;
+      color: #fff;
       padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-size: 0.9rem;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: all 0.3s ease;
     }
+
+    .skill:hover {
+      background: #357ab7;
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #282828;
+      color: #fff;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    footer a {
+      color: #4a90e2;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #357ab7;
+    }
+
+    /* Icons */
+    .icon {
+      font-size: 2rem;
+      margin-right: 10px;
+      color: #4a90e2;
+      transition: color 0.3s ease;
+    }
+
+    .icon:hover {
+      color: #357ab7;
+    }
+
+    /* Button Styling */
+    .button {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #4a90e2;
+      color: white;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #357ab7;
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
+
   <header>
     <img src="https://via.placeholder.com/150" alt="Profile Picture">
     <h1>Alireza Rahmani Firouzja</h1>
@@ -98,7 +167,7 @@
   <section>
     <h2>Projects</h2>
     <ul>
-      <li><strong>Cinema Management System</strong> - A modular backend project for managing cinema operations. (<a href="https://github.com/arf1383">View on GitHub</a>)</li>
+      <li><strong>Cinema Management System</strong> - A modular backend project for managing cinema operations. (<a href="https://github.com/arf1383" target="_blank">View on GitHub</a>)</li>
       <li><strong>Banking Application</strong> - A secure and scalable banking system written in Python.</li>
       <li><strong>Algorithm Visualizer</strong> - A C++ project for visualizing and analyzing algorithms in real time.</li>
     </ul>
@@ -107,8 +176,8 @@
   <section>
     <h2>Contact Me</h2>
     <ul>
-      <li><a href=https://www.linkedin.com/in/alireza-rahmani-firouzja-879678246?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bw35jnc0RSma9FsZ9S3x8gA%3D%3D target="_blank">GitHub</a></li>
-      <li><a href="https://linkedin.com/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/arf1383" target="_blank" class="icon"><i class="fab fa-github"></i> GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/alireza-rahmani-firouzja-879678246" target="_blank" class="icon"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
       <li>Email: arf.firouzja1583@gmail.com</li>
     </ul>
   </section>
@@ -116,5 +185,19 @@
   <footer>
     <p>&copy; 2025 Alireza Rahmani Firouzja. All Rights Reserved.</p>
   </footer>
+
+  <script>
+    // Scroll Animation for section visibility
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          section.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
